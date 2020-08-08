@@ -19,12 +19,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d54800be-2c18-4dc4-896e-b16e24c299a9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/com/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/com/market/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/com/market/assist/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/com/market/assist/dataconvert/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+    <list default="true" id="d54800be-2c18-4dc4-896e-b16e24c299a9" name="Default Changelist" comment="Initial Project Setup">
+      <change beforePath="$PROJECT_DIR$/com/market/assist/dataconvert/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/com/market/assist/dataconvert/__init__.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,6 +58,14 @@
       <option name="presentableId" value="Default" />
       <updated>1596894327348</updated>
     </task>
+    <task id="LOCAL-00001" summary="Initial Project Setup">
+      <created>1596895373074</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1596895373074</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -74,6 +78,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Initial Project Setup" />
+    <option name="LAST_COMMIT_MESSAGE" value="Initial Project Setup" />
   </component>
   <component name="WindowStateProjectService">
     <state x="277" y="57" key="SettingsEditor" timestamp="1596894364290">

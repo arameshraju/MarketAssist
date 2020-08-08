@@ -2,6 +2,7 @@ import os
 import csv
 import psycopg2
 
+# Please replace with your user name password if it is not correct
 conn = psycopg2.connect(database = "postgres", user = "admin", password = "admin", host = "localhost", port = "5432")
 print("Opened database successfully")
 
@@ -15,6 +16,7 @@ def insertRecord(param):
     cur.execute(param)
     #print(param)
 
+# Please enter folder path here
 entries = os.listdir('D:\\marketData\\Consolidated/')
 for entry in entries:
     with open('D:\\marketData\\Consolidated\\' + entry , newline='') as f:
