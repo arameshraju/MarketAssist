@@ -2,7 +2,8 @@ from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 import time
 
-#"E:\Python_works\chromedriver_win32\chromedriver.exe"
+
+# please enter valid Path here
 driver = webdriver.Chrome('E:\\Python_works\\chromedriver.exe')
 driver.get("http://www.nseindia.com/all-reports-derivatives")
 time.sleep(15)
