@@ -14,8 +14,8 @@ def daterange(start_date, end_date):
 # headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 YaBrowser/19.6.1.153 Yowser/2.5 Safari/537.36'}
 headers = {'User-Agent': 'Chrome/74.0.3729.169 YaBrowser/19.6.1.153 Yowser/2.5 Safari/537.36'}
 
-start_date = date(2016, 1, 29)
-end_date = date(2019, 8, 5)
+start_date = date(2015, 1, 1)
+end_date = date(2016, 1, 1)
 for single_date in daterange(start_date, end_date):
     strDate=( single_date.strftime("%d%b%Y")).upper()
     strYear=( single_date.strftime("%Y")).upper()
@@ -26,7 +26,7 @@ for single_date in daterange(start_date, end_date):
         r = requests.get(url, headers=headers,allow_redirects=True )
         open("/data/" + strDate+".zip" , 'wb').write(r.content)
         print(url + " : " + single_date.strftime("%w"))
-        time.sleep(60)
+        time.sleep(40)
 
 
 

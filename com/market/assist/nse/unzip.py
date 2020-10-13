@@ -18,4 +18,4 @@ class UnzipBhav:
 #     zip_ref.extractall("E:\\data\\\extrac")
 
 
-UnzipBhav('E:\\data\\','E:\\data\\extrac')
+UnzipBhav('E:\\data\\historicaldata','E:\\data\\historicaldata\\extract')
