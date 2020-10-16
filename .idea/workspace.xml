@@ -25,13 +25,13 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d54800be-2c18-4dc4-896e-b16e24c299a9" name="Default Changelist" comment="NSE Dowload">
-      <change afterPath="$PROJECT_DIR$/com/market/assist/alphavantage/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/com/market/assist/nse/dataInsert.py" afterDir="false" />
+    <list default="true" id="d54800be-2c18-4dc4-896e-b16e24c299a9" name="Default Changelist" comment="Latest changes">
+      <change afterPath="$PROJECT_DIR$/com/market/assist/strategy/Options.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/com/market/assist/strategy/OptionsLongStgl.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/com/market/assist/strategy/WeeklyOptionsLongStgl.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/com/market/assist/strategy/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/com/market/assist/nse/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/com/market/assist/nse/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/com/market/assist/nse/unzip.py" beforeDir="false" afterPath="$PROJECT_DIR$/com/market/assist/nse/unzip.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,10 +56,17 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/com/market/assist/strategy" />
     <property name="settings.editor.selected.configurable" value="project.propDebugger" />
   </component>
-  <component name="RunManager" selected="Python.dataInsert">
-    <configuration name="__init__ (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Python_works\MarketAssist\com\market\assist\strategy" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.WeeklyOptionsLongStgl">
+    <configuration name="Options" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <output_file path="$USER_HOME$/Desktop/PYTHON_LOG/LOG..TXT" is_save="true" />
       <module name="MarketAssist" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -67,11 +74,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/com/market/assist/nse" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/com/market/assist/strategy" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/com/market/assist/nse/__init__.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/com/market/assist/strategy/Options.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -80,7 +87,8 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="__init__" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="OptionsLongStgl" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <output_file path="$USER_HOME$/Desktop/PYTHON_LOG/LOG..TXT" is_save="true" />
       <module name="MarketAssist" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -88,11 +96,33 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/com/market/assist/alphavantage" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/com/market/assist/strategy" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/com/market/assist/alphavantage/__init__.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/com/market/assist/strategy/OptionsLongStgl.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="WeeklyOptionsLongStgl" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <output_file path="$USER_HOME$/Desktop/PYTHON_LOG/LOG..TXT" is_save="true" />
+      <module name="MarketAssist" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/com/market/assist/strategy" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/com/market/assist/strategy/WeeklyOptionsLongStgl.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -143,12 +173,20 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="Python.dataInsert" />
+      <item itemvalue="Python.Options" />
+      <item itemvalue="Python.unzip" />
+      <item itemvalue="Python.OptionsLongStgl" />
+      <item itemvalue="Python.WeeklyOptionsLongStgl" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.WeeklyOptionsLongStgl" />
+        <item itemvalue="Python.OptionsLongStgl" />
+        <item itemvalue="Python.Options" />
         <item itemvalue="Python.dataInsert" />
         <item itemvalue="Python.unzip" />
-        <item itemvalue="Python.__init__ (1)" />
-        <item itemvalue="Python.__init__" />
       </list>
     </recent_temporary>
   </component>
@@ -198,7 +236,14 @@
       <option name="project" value="LOCAL" />
       <updated>1597491420766</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Latest changes">
+      <created>1602589400817</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1602589400817</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -230,33 +275,42 @@
     <MESSAGE value="guide" />
     <MESSAGE value="Selenium copy" />
     <MESSAGE value="NSE Dowload" />
-    <option name="LAST_COMMIT_MESSAGE" value="NSE Dowload" />
+    <MESSAGE value="Latest changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Latest changes" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1500" height="224" key="GridCell.Tab.0.bottom" timestamp="1602519638339">
+    <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1602852990301">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1500" height="224" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1602519638339" />
-    <state width="1500" height="224" key="GridCell.Tab.0.center" timestamp="1602519638339">
+    <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1602852990301" />
+    <state x="548" y="153" key="FileChooserDialogImpl" timestamp="1602852983324">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1500" height="224" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1602519638339" />
-    <state width="1500" height="224" key="GridCell.Tab.0.left" timestamp="1602519638338">
+    <state x="548" y="153" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1602852983324" />
+    <state width="1500" height="219" key="GridCell.Tab.0.bottom" timestamp="1602855532080">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1500" height="224" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1602519638338" />
-    <state width="1500" height="224" key="GridCell.Tab.0.right" timestamp="1602519638339">
+    <state width="1500" height="219" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1602855532080" />
+    <state width="1500" height="219" key="GridCell.Tab.0.center" timestamp="1602855532080">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1500" height="224" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1602519638339" />
+    <state width="1500" height="219" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1602855532080" />
+    <state width="1500" height="219" key="GridCell.Tab.0.left" timestamp="1602855532080">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1500" height="219" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1602855532080" />
+    <state width="1500" height="219" key="GridCell.Tab.0.right" timestamp="1602855532080">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1500" height="219" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1602855532080" />
     <state x="277" y="57" key="SettingsEditor" timestamp="1596894364290">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="277" y="57" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1596894364290" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1597491439717">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1602589403318">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1597491439717" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1602589403318" />
     <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1602429977913">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

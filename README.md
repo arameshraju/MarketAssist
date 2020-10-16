@@ -36,6 +36,14 @@ create table  market.bankniftyfnodata as select d.instrument,d.symbol,d.expiry_d
  join (select trandate,symbol,expiry_dt,close from market.rawfnodata  x where   x.instrument='FUTIDX' and x.option_typ='XX') x
  on (d.symbol=x.symbol and d.expiry_dt=x.expiry_dt and d.trandate=x.trandate )
  where d.symbol='BANKNIFTY';
+--Weekly table 
+create table market.bankniftyfnodata_weekly as
+select d.instrument,d.symbol,d.expiry_dt,d.strike_pr,d.option_typ,d.open,d.high,low,d.close,d.settle_pr,d.contracts,d.val_inlakh,d.open_int,d.chg_in_oi,d.trandate,x.close as f_close
+ from market.rawfnodata d
+ join (select trandate,symbol,min(close) as close from market.rawfnodata  x where   x.instrument='FUTIDX' and x.option_typ='XX' group by  trandate,symbol) x
+ on (d.symbol=x.symbol and d.trandate=x.trandate )
+ where d.symbol='BANKNIFTY';
+
 
 -- to get the ATM Strike
 select   instrument,symbol,expiry_dt,strike_pr,option_typ,open,high,low,close,settle_pr,contracts,val_inlakh,open_int,chg_in_oi,trandate,f_close
