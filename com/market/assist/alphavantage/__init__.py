@@ -1,4 +1,4 @@
-from alpha_vantage.timeseries import TimeSeries
+import alpha_vantage.timeseries
 
 ts = TimeSeries(key='222LKR459HRSY5I8')
 # Get json object with the intraday data and another with  the call's metadata

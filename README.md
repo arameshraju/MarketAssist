@@ -19,16 +19,51 @@ CREATE TABLE   rawdata (
 );
 -------------------
 ### tabel for fno bhav copy
-create table market.rawfnodata (
+CREATE SCHEMA market;
+use market;
+
+create table  rawfnodata (
 INSTRUMENT varchar,
 SYMBOL varchar,
 EXPIRY_DT date,
 STRIKE_PR decimal,
-OPselect count(*)  from market.rawfnodata
-TION_TYP varchar,
+OPTION_TYP varchar,
 OPEN decimal,HIGH decimal ,LOW decimal ,CLOSE decimal ,
 SETTLE_PR decimal ,CONTRACTS decimal,VAL_INLAKH decimal ,OPEN_INT decimal ,CHG_IN_OI decimal ,trandate date)
+
+### Final fno Table
+create table  market.fnodata (
+INSTRUMENT varchar,
+SYMBOL varchar,
+EXPIRY_DT date,
+STRIKE_PR decimal,
+OPTION_TYP varchar,
+OPEN decimal,HIGH decimal ,LOW decimal ,CLOSE decimal ,
+SETTLE_PR decimal ,CONTRACTS decimal,VAL_INLAKH decimal ,OPEN_INT decimal ,CHG_IN_OI decimal ,trandate date,
+PRIMARY KEY (INSTRUMENT, SYMBOL, EXPIRY_DT,STRIKE_PR,OPTION_TYP,trandate)
 )
+####Insert into the data
+insert into market.fnodata
+select 
+ distinct  instrument,symbol,expiry_dt,strike_pr,option_typ,open,high,low,close,settle_pr,contracts,val_inlakh,open_int,chg_in_oi,trandate
+from rawfnodata
+
+###stock summary table 
+create table market.fno_stk_summry as 
+select d.instrument,d.symbol,d.expiry_dt,d.strike_pr,d.option_typ,d.open,d.high,d.low,d.close,d.settle_pr,d.contracts,
+d.val_inlakh,d.open_int,d.chg_in_oi,d.trandate
+,(SELECT SUM(open_int) FROM rawfnodata s where s.INSTRUMENT= d.INSTRUMENT and d.expiry_dt >= s.expiry_dt and   s.symbol=d.symbol and s.trandate=d.trandate) as coi
+,(SELECT SUM(open_int) FROM rawfnodata s where s.INSTRUMENT= 'OPTSTK' and s.option_typ='CE' and d.expiry_dt  >= s.expiry_dt and    s.symbol=d.symbol and s.trandate=d.trandate) as CE_OI
+,(SELECT SUM(open_int) FROM rawfnodata s where s.INSTRUMENT= 'OPTSTK' and s.option_typ='PE' and d.expiry_dt >= s.expiry_dt and   s.symbol=d.symbol and s.trandate=d.trandate) as PE_OI
+,(SELECT SUM(chg_in_oi) FROM rawfnodata s where s.INSTRUMENT= d.INSTRUMENT and d.expiry_dt >= s.expiry_dt and    s.symbol=d.symbol and s.trandate=d.trandate) as coi_ch
+,(SELECT SUM(chg_in_oi) FROM rawfnodata s where s.INSTRUMENT= 'OPTSTK' and d.expiry_dt >= s.expiry_dt and s.option_typ='CE' and   s.symbol=d.symbol and s.trandate=d.trandate) as CE_OI_ch
+,(SELECT SUM(chg_in_oi) FROM rawfnodata s where s.INSTRUMENT= 'OPTSTK' and d.expiry_dt >= s.expiry_dt  and s.option_typ='PE' and   s.symbol=d.symbol and s.trandate=d.trandate) as PE_OI_ch
+
+from market.fnodata d
+where  INSTRUMENT= 'FUTSTK' and expiry_dt='2021-06-24' --and d.symbol='SBIN'
+and d.trandate='2021-05-27'
+order by trandate,symbol;
+
 ### Queries
 --to create sub table for a synbol
 create table  market.bankniftyfnodata as select d.instrument,d.symbol,d.expiry_dt,d.strike_pr,d.option_typ,d.open,d.high,low,d.close,d.settle_pr,d.contracts,d.val_inlakh,d.open_int,d.chg_in_oi,d.trandate,x.close as f_close

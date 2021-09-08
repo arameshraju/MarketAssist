@@ -18,4 +18,5 @@ class UnzipBhav:
 #     zip_ref.extractall("E:\\data\\\extrac")
 
 
-UnzipBhav('E:\\data\\historicaldata','E:\\data\\historicaldata\\extract')
+# UnzipBhav('C:\\my_data\\bhav','C:\\my_data\\bhav\\fno-data')
+UnzipBhav('C:\\my_data\\fno','C:\\my_data\\fno\\fno-data')

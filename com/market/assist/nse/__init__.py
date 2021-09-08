@@ -24,7 +24,8 @@ for single_date in daterange(start_date, end_date):
     if dayOfWeek>0 and dayOfWeek<6 :
         url = "https://www1.nseindia.com/content/historical/DERIVATIVES/"+strYear+"/"+strMonth+"/fo"+ strDate +"bhav.csv.zip"
         r = requests.get(url, headers=headers,allow_redirects=True )
-        open("/data/" + strDate+".zip" , 'wb').write(r.content)
+        print(r)
+        open("/my_data/" + strDate+".zip" , 'wb').write(r.content)
         print(url + " : " + single_date.strftime("%w"))
         time.sleep(40)
 
